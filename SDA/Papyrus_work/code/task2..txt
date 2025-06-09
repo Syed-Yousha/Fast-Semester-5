@@ -1,0 +1,138 @@
+abstract class User {
+    private String name;
+    private int id;
+    private String password;
+
+    public User(String name, int id, String password) {
+        this.name = name;
+        this.id = id;
+        this.password = password;
+    }
+
+    public void login() {
+        System.out.println(name + " has logged in.");
+    }
+
+    public void logout() {
+        System.out.println(name + " has logged out.");
+    }
+
+    public void controlDevice(SmartDevice device) {
+        System.out.println(name + " is controlling device: " + device.getDevName());
+    }
+}
+
+
+class AdminUser extends User {
+
+    public AdminUser(String name, int id, String password) {
+        super(name, id, password);
+    }
+
+    public void addDevice(SmartDevice device) {
+        System.out.println("Device " + device.getDevName() + " has been added.");
+    }
+
+    public void removeDevice(SmartDevice device) {
+        System.out.println("Device " + device.getDevName() + " has been removed.");
+    }
+
+    public void assignDevice(SmartDevice device, Room room) {
+        device.setRoom(room);
+        System.out.println("Device " + device.getDevName() + " assigned to room: " + room.getRoomName());
+    }
+}
+
+
+abstract class SmartDevice {
+    private String id;
+    private String devName;
+    private Room room;
+
+    public SmartDevice(String id, String devName) {
+        this.id = id;
+        this.devName = devName;
+    }
+
+    public String getDevName() {
+        return devName;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
+    public void turnOn() {
+        System.out.println(devName + " is now ON.");
+    }
+
+    public void turnOff() {
+        System.out.println(devName + " is now OFF.");
+    }
+}
+
+
+class Room {
+    private String roomID;
+    private String roomName;
+
+    public Room(String roomID, String roomName) {
+        this.roomID = roomID;
+        this.roomName = roomName;
+    }
+
+    public String getRoomName() {
+        return roomName;
+    }
+}
+
+
+class SecurityCam extends SmartDevice {
+
+    public SecurityCam(String id, String devName) {
+        super(id, devName);
+    }
+
+    public void recordVideo() {
+        System.out.println(getDevName() + " is recording.");
+    }
+
+    public void notifyUser() {
+        System.out.println("Motion detected! Notification sent by " + getDevName());
+    }
+}
+
+
+class Notification {
+    private String id;
+    private String name;
+
+    public Notification(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public void sendToUser(User user) {
+        System.out.println("Notification '" + name + "' sent to user: " + user);
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Room livingRoom = new Room("R1", "Living Room");
+        AdminUser admin = new AdminUser("Alice", 1, "admin123");
+
+        SmartDevice camera = new SecurityCam("C1", "Security Camera");
+
+        admin.addDevice(camera);
+        admin.assignDevice(camera, livingRoom);
+
+        admin.controlDevice(camera);
+
+        ((SecurityCam) camera).recordVideo();
+        ((SecurityCam) camera).notifyUser();
+    }
+}
+
+

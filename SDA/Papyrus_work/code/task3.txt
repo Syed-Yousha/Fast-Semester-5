@@ -1,0 +1,16 @@
+public class Main {
+    public static void main(String[] args) {
+        SmartDevice[] devices = {
+            new SecurityCam("C1", "Front Door Camera"),
+            new SecurityCam("C2", "Backyard Camera"),
+            new SecurityCam("C3", "Garage Camera")
+        };
+
+        for (SmartDevice device : devices) {
+            device.turnOn();
+        }
+
+        ((SecurityCam) devices[0]).recordVideo();
+        ((SecurityCam) devices[1]).notifyUser();
+    }
+}

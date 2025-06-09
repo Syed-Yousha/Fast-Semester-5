@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+        UserManagementSystem userSystem = new UserManagementSystem();
+
+        AdminUser admin = new AdminUser("Alice", 1, "admin123");
+
+        userSystem.addUser(admin);
+        userSystem.addUser(regularUser);
+
+        User loggedInUser = userSystem.login("Alice", "admin123");
+        if (loggedInUser != null) {
+            SmartDevice frontCam = new SecurityCam("C1", "Front Door Camera");
+            loggedInUser.controlDevice(frontCam);
+
+            if (loggedInUser instanceof AdminUser) {
+                ((AdminUser) loggedInUser).addDevice(frontCam);
+                Room frontYard = new Room("R1", "Front Yard");
+                ((AdminUser) loggedInUser).assignDevice(frontCam, frontYard);
+            }
+        }
+
+        loggedInUser = userSystem.login("Bob", "user123");
+        if (loggedInUser != null) {
+            SmartDevice backyardCam = new SecurityCam("C2", "Backyard Camera");
+            loggedInUser.controlDevice(backyardCam);
+        }
+    }
+}

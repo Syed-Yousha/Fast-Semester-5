@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_EhiOgHGgEe-GdNOwijyqzQ" name="test">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_EpsE8HGgEe-GdNOwijyqzQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wpO0EHQgEe-TALT_XnVj_Q" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PiWdUHQhEe-TALT_XnVj_Q" name="Name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_w8xW8HQnEe-TALT_XnVj_Q" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zm2-oHQnEe-TALT_XnVj_Q" name="password">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C56_YHQwEe-TALT_XnVj_Q" name="smartdevice" type="_c_6VAHQpEe-TALT_XnVj_Q" association="_C54jIHQwEe-TALT_XnVj_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C57mcHQwEe-TALT_XnVj_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C58NgHQwEe-TALT_XnVj_Q" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0R08UHQpEe-TALT_XnVj_Q" name="Login"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1VQIMHQpEe-TALT_XnVj_Q" name="Logout"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Y9BR4HQqEe-TALT_XnVj_Q" name="control_dev">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_e19bMHQqEe-TALT_XnVj_Q" name="device">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WA-toHQhEe-TALT_XnVj_Q" name="Admin User">
+    <generalization xmi:type="uml:Generalization" xmi:id="_n4kuYHQuEe-TALT_XnVj_Q" general="_wpO0EHQgEe-TALT_XnVj_Q"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l-G_EHQpEe-TALT_XnVj_Q" name="AddDevice">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BJUzMHQqEe-TALT_XnVj_Q" name="Device">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_41kNQHQpEe-TALT_XnVj_Q" name="RemoveDevice">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_HpXYwHQqEe-TALT_XnVj_Q" name="Device">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KCd-IHQqEe-TALT_XnVj_Q" name="AssignDevice">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Q_n9gHQqEe-TALT_XnVj_Q" name="device">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_T5npcHQqEe-TALT_XnVj_Q" name="room">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Ywyi0HQhEe-TALT_XnVj_Q" name="Smart Devices"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QqbDMHQiEe-TALT_XnVj_Q" name="Notification">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_bPOvoHQrEe-TALT_XnVj_Q" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kCCpEHQrEe-TALT_XnVj_Q" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qGjJMHQrEe-TALT_XnVj_Q" name="sendtouser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zHhzwHQmEe-TALT_XnVj_Q" name="SecurityCam">
+    <generalization xmi:type="uml:Generalization" xmi:id="_tN3ioHQvEe-TALT_XnVj_Q" general="_c_6VAHQpEe-TALT_XnVj_Q"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1CeucHQvEe-TALT_XnVj_Q" type="_QqbDMHQiEe-TALT_XnVj_Q" association="_1CcSMHQvEe-TALT_XnVj_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Cf8kHQvEe-TALT_XnVj_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Cf8kXQvEe-TALT_XnVj_Q" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_d_JAkHQtEe-TALT_XnVj_Q" name="record_vid"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gOMSEHQtEe-TALT_XnVj_Q" name="notify"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ZuFX4HQpEe-TALT_XnVj_Q" name="Room">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ENAxMHQrEe-TALT_XnVj_Q" name="roomid">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ITNxkHQrEe-TALT_XnVj_Q" name="room_name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2kaQsHQuEe-TALT_XnVj_Q" name="smartdevice" type="_c_6VAHQpEe-TALT_XnVj_Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2kcF4HQuEe-TALT_XnVj_Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2kcs8HQuEe-TALT_XnVj_Q" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__r4LgHQuEe-TALT_XnVj_Q" type="_c_6VAHQpEe-TALT_XnVj_Q" association="__r1vQHQuEe-TALT_XnVj_Q">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__r6AsHQuEe-TALT_XnVj_Q" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_c_6VAHQpEe-TALT_XnVj_Q" name="SmartDevice">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oUcH0HQqEe-TALT_XnVj_Q" name="ID">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u-u1kHQqEe-TALT_XnVj_Q" name="dev_name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_39T6IHQqEe-TALT_XnVj_Q" name="turn_on"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_53l1gHQqEe-TALT_XnVj_Q" name="turn_off"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__r1vQHQuEe-TALT_XnVj_Q" name="use device" memberEnd="__r4LgHQuEe-TALT_XnVj_Q __r6nwHQuEe-TALT_XnVj_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__r3kcHQuEe-TALT_XnVj_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__r3kcXQuEe-TALT_XnVj_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__r6nwHQuEe-TALT_XnVj_Q" name="room" type="_ZuFX4HQpEe-TALT_XnVj_Q" association="__r1vQHQuEe-TALT_XnVj_Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1CcSMHQvEe-TALT_XnVj_Q" memberEnd="_1CeucHQvEe-TALT_XnVj_Q _1CgjoHQvEe-TALT_XnVj_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1CeHYHQvEe-TALT_XnVj_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1CeHYXQvEe-TALT_XnVj_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1CgjoHQvEe-TALT_XnVj_Q" name="securitycam" type="_zHhzwHQmEe-TALT_XnVj_Q" association="_1CcSMHQvEe-TALT_XnVj_Q">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_37j0YHQvEe-TALT_XnVj_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_C54jIHQwEe-TALT_XnVj_Q" memberEnd="_C56_YHQwEe-TALT_XnVj_Q _C58NgXQwEe-TALT_XnVj_Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_C55xQHQwEe-TALT_XnVj_Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_C56YUHQwEe-TALT_XnVj_Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_C58NgXQwEe-TALT_XnVj_Q" name="user" type="_wpO0EHQgEe-TALT_XnVj_Q" association="_C54jIHQwEe-TALT_XnVj_Q">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FOGBcHQwEe-TALT_XnVj_Q" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
