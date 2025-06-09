@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C17EFE19-8204-E440-AAB1-A2E2BE150637" containerWithKeyObject="4211B52F-943A-1665-4FAD-50D48C5DD881" localFKIndex="E58DFE4F-118A-FAD6-62BD-92AB5DD66CF0" name="guest_meal_Resident_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>DF915E79-989B-9D9A-26C9-7C56514286F7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<referredTableLongName>Resident</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>87059AD5-2D2E-B3D4-BF7B-79FA4BF64421</referredTableID>
+<keyObject>2C848686-871A-418A-9DA7-CF9F66A07703</keyObject>
+<referredKeyID>2C848686-871A-418A-9DA7-CF9F66A07703</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>resident_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

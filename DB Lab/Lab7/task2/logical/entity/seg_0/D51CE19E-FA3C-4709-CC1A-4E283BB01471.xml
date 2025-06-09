@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D51CE19E-FA3C-4709-CC1A-4E283BB01471" name="Feedback">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:15:03 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="feedback_id" id="EEFD0B5B-A6BF-0AEB-4050-0365D0713863">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:15:19 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="feedback_details" id="CAF5BEE9-2067-074E-05ED-6A34AAD9E07A">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:15:37 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id" id="C74116DF-0A4B-E5F2-01D1-CE49CF11C7A8">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:16:31 UTC</createdTime>
+<generatorID>17F363E0-E943-94FC-1890-0BD38B718A12</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>E4ABF650-1D7B-BFA6-7CEB-55F4377B7969</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_id" id="846C8CFC-C0B7-1B84-7018-2FFF816AF79A">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:16:45 UTC</createdTime>
+<generatorID>8929FB54-B60B-7BDA-76B6-1BC81CB823F6</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>894BC413-01EE-867F-8B4D-69C6162EE328</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guest_meal_id" id="643D5AD1-EC42-FEF5-348A-35FF117CCD86">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:55 UTC</createdTime>
+<generatorID>8929FB54-B60B-7BDA-76B6-1BC81CB823F6</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>80C187B4-5308-E3EA-3DBC-3B9D7F77AC25</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id1" id="3083B4C0-43FF-B055-495C-0B04AE9F13A9">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:55 UTC</createdTime>
+<generatorID>8929FB54-B60B-7BDA-76B6-1BC81CB823F6</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>37B6730C-95B6-8ED7-53E6-C1FC24EADC73</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id2" id="2EF3F9C6-D31F-E532-AD42-CB12028E3F29">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:55 UTC</createdTime>
+<generatorID>8929FB54-B60B-7BDA-76B6-1BC81CB823F6</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>612C171D-EE76-96A0-F187-C93B018E18F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F23328D-985D-55E2-8335-76EEB5F4C6BD" name="Feedback PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:15:34 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEFD0B5B-A6BF-0AEB-4050-0365D0713863</attributeRef>
+<attributeRef>C74116DF-0A4B-E5F2-01D1-CE49CF11C7A8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

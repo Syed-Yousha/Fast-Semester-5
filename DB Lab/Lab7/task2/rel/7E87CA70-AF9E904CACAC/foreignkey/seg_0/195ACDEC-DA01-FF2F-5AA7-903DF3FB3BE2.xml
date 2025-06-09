@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="195ACDEC-DA01-FF2F-5AA7-903DF3FB3BE2" containerWithKeyObject="CF42B8A4-9E04-D300-8B25-05F03E8B408F" localFKIndex="CAB1E402-1DDC-0E79-23DC-343840F24275" name="Feedback_Meal_Booking_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>8929FB54-B60B-7BDA-76B6-1BC81CB823F6</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<referredTableLongName>Meal_Booking</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B7DBBBF4-42EA-23B3-30DC-327A7E7481B1</referredTableID>
+<keyObject>6ADF834A-895A-6792-B5B3-1F2FDFD1AEA7</keyObject>
+<referredKeyID>6ADF834A-895A-6792-B5B3-1F2FDFD1AEA7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>booking_id,Resident_resident_id,guest_meal_guest_meal_id,guest_meal_Resident_resident_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,54 @@
+--Task2
+create table bank_accounts (
+    account_id number primary key,
+    balance number(12, 2) not null check (balance >= 0),
+    account_type varchar2(20)
+);
+
+create table transactions (
+    transaction_id number primary key,
+    account_id number references bank_accounts(account_id),
+    type varchar2(10) check (type in ('debit', 'credit')),
+    amount number(12, 2) not null,
+    transaction_date date default sysdate
+);
+
+insert into bank_accounts (account_id, balance, account_type)
+values (1, 1000, 'savings');
+
+insert into bank_accounts (account_id, balance, account_type)
+values (2, 500, 'current');
+
+declare
+    sender_id number := 1;
+    receiver_id number := 2;
+    transfer_amount number := 200;
+    transaction_fee number := transfer_amount * 0.02;
+    transaction_id_counter number := 1;
+begin
+    update bank_accounts set balance = balance - (transfer_amount + transaction_fee)
+    where account_id = sender_id;
+    savepoint balance_updated;
+
+    insert into transactions (transaction_id, account_id, type, amount, transaction_date)
+    values (transaction_id_counter, sender_id, 'debit', transfer_amount + transaction_fee, sysdate);
+    transaction_id_counter := transaction_id_counter + 1;
+
+    update bank_accounts
+    set balance = balance + transfer_amount
+    where account_id = receiver_id;
+
+    insert into transactions (transaction_id, account_id, type, amount, transaction_date)
+    values (transaction_id_counter, receiver_id, 'credit', transfer_amount, sysdate);
+    transaction_id_counter := transaction_id_counter + 1;
+
+    commit;
+
+exception
+    when others then
+        rollback to balance_updated;
+        raise;
+end;
+
+
+

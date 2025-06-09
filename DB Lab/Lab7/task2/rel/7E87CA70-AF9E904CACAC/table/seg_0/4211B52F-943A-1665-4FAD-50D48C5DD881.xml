@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4211B52F-943A-1665-4FAD-50D48C5DD881" name="guest_meal">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>34DD7794-0F45-E228-940F-448B3777603E</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="guest_meal_id" id="85701EDB-DBC3-5B89-3252-177503CB5A5A">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>6C039FD4-A4D7-9BE9-37FD-E8C84DC86D3D</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guest_count" id="9FD3AF47-FBA1-868B-DE3E-B7B9164CF056">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>2F027EB5-C986-7327-4B7F-0FDD4A2F7FEB</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guest_meal_charges" id="80969793-B29B-A8CB-F524-1AFDD5AC6995">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>58B087EA-1B88-FAD8-4846-138A51E86399</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resident_resident_id" id="459E0EA0-1837-DCD4-5A06-23331D547344">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>8957CFF4-2C97-D831-DC54-996BC515EE03</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C17EFE19-8204-E440-AAB1-A2E2BE150637" referredColumn="89686D71-09A5-B909-C46C-A6681BEB89EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C43E587A-1BD7-B292-419F-FEE7A096368F" name="guest_meal_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>1C0F2574-AF4A-760C-A5C8-01C67BFDAE8D</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85701EDB-DBC3-5B89-3252-177503CB5A5A"/>
+<colUsage columnID="459E0EA0-1837-DCD4-5A06-23331D547344"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E58DFE4F-118A-FAD6-62BD-92AB5DD66CF0" name="guest_meal_Resident_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>DF915E79-989B-9D9A-26C9-7C56514286F7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="459E0EA0-1837-DCD4-5A06-23331D547344"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

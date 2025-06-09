@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="368C8035-75B9-0A81-1572-DECED7914A12" name="Students">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:51:53 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="student_id" id="8273E257-228F-E837-D842-CC34BECFE042">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:52:08 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="First_name" id="A9096A21-44ED-277B-771D-C4B9F0E9BDBD">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:52:43 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="last_name" id="7C079F47-B5D8-0A2F-1811-43A4C94DED53">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:53:12 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="522CF955-FB20-DB58-F4A1-84CC1EDCE326">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:53:26 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="registration_date" id="075127A7-5E4B-3C51-AE7A-A3C92C587D80">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:53:46 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="193BFB14-9121-D0FF-E062-A00EBFF73D75" name="Students PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:52:40 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8273E257-228F-E837-D842-CC34BECFE042</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88609B5A-8756-A6A4-0181-2AE9B1997A2D" name="Registration">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:50:13 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="registeration_id" id="C219714C-6F76-77FD-AA93-A00D4FF2EEBF">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:50:52 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="registration_date" id="15DD1940-5052-DBAB-78B5-2E5A6659BD0F">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:51:14 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="course_id" id="637F3A38-E8DD-8E93-9526-DD3DCA408322">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:04:22 UTC</createdTime>
+<generatorID>EFC71FB8-6087-B24F-55E2-146C89429B60</generatorID>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<referedAttribute>0F73BE55-46D2-560D-C45D-7AB0BCEEF490</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="student_id" id="967D89C2-EF58-BBD3-0762-D60CDAB3B4A2">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:16:51 UTC</createdTime>
+<generatorID>13FFE126-B77E-F7CA-1FCA-22F1455A7E8E</generatorID>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<referedAttribute>8273E257-228F-E837-D842-CC34BECFE042</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A37209B0-467C-478A-E24D-46A98FEBF9A3" name="Registration PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 09:51:11 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C219714C-6F76-77FD-AA93-A00D4FF2EEBF</attributeRef>
+<attributeRef>967D89C2-EF58-BBD3-0762-D60CDAB3B4A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

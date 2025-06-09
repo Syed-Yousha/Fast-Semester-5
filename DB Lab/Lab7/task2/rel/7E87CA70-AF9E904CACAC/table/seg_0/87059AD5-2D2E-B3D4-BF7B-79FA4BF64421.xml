@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87059AD5-2D2E-B3D4-BF7B-79FA4BF64421" name="Resident">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>2F7CC982-16A7-F432-E9F3-CD4DA7D179E2</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="resident_id" id="89686D71-09A5-B909-C46C-A6681BEB89EB">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>E4ABF650-1D7B-BFA6-7CEB-55F4377B7969</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="full_name" id="4D998B02-F075-691B-1090-1927AEEB4516">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>7E35F97D-C8EF-1652-E3C2-1892A600BC2C</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="room_number" id="110FF263-563C-C8E5-7BF6-5D412E59EAB5">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>1B2CC92F-F1E2-0E55-A5BE-3432E823EB8A</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="contact_info" id="86CADFB1-740F-3301-77B2-6DCE1269D668">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>6FBE5DFF-E757-A78B-76B2-8CFB89C484EE</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dietry_preferences" id="2E27F170-D268-091E-2028-7CC8D5AF1125">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>4D8D0AE3-B14A-507F-F1A1-58097EA91064</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Allergies" id="482E1F0A-1589-6C24-13C1-2AA7FF19E170">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>A9832F7C-F116-014F-D8E5-E3D5D5C34A4C</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hostel_hostel_id" id="E8F714AD-51B6-EFB1-0596-472B6830E43A">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>DF880629-4844-DC83-3CCB-E99F53802494</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB12D4A-6136-C036-DA10-32F92DD0016F" referredColumn="D62980DE-F8B7-E6EF-BD3C-BBB4E4493F92"/>
+</associations>
+</Column>
+<Column name="MealPlan_meal_plan_id" id="8DE2B54D-A05D-7242-C2D3-F6614972D55D">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>DAA273AF-8A25-5DE7-E34B-F6CF1DA881E2</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E4942C0-FCE9-7775-5696-4197FE82BEB9" referredColumn="0A05B36A-6D89-1CCE-1C74-C1AB514EC27D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C848686-871A-418A-9DA7-CF9F66A07703" name="Resident_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>3C7E7B85-18C7-A213-9B4C-8B78B1DB3A18</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89686D71-09A5-B909-C46C-A6681BEB89EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBEA37F8-E6CE-36A9-5ADC-8298195666C0" name="Resident__IDX">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F0800F49-5B96-8F71-0DD5-CB5F93158D7A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8DE2B54D-A05D-7242-C2D3-F6614972D55D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="211AF374-CF5A-698D-BC8F-D9911B5854AF" name="Resident_Hostel_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>CD99920E-E550-25EE-935D-65C4C52912CC</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8F714AD-51B6-EFB1-0596-472B6830E43A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E51B8E4-FD91-A324-8B5B-DBFB88CC3ADD" name="Resident_MealPlan_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>F0800F49-5B96-8F71-0DD5-CB5F93158D7A</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DE2B54D-A05D-7242-C2D3-F6614972D55D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

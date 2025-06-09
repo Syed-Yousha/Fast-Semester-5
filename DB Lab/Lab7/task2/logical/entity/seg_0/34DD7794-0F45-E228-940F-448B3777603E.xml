@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34DD7794-0F45-E228-940F-448B3777603E" name="guest_meal">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:23:23 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="guest_meal_id" id="6C039FD4-A4D7-9BE9-37FD-E8C84DC86D3D">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:23:36 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guest_count" id="2F027EB5-C986-7327-4B7F-0FDD4A2F7FEB">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:23:53 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guest_meal_charges" id="58B087EA-1B88-FAD8-4846-138A51E86399">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:24:14 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id" id="8957CFF4-2C97-D831-DC54-996BC515EE03">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:14 UTC</createdTime>
+<generatorID>DF915E79-989B-9D9A-26C9-7C56514286F7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>E4ABF650-1D7B-BFA6-7CEB-55F4377B7969</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1C0F2574-AF4A-760C-A5C8-01C67BFDAE8D" name="guest_meal PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:23:50 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C039FD4-A4D7-9BE9-37FD-E8C84DC86D3D</attributeRef>
+<attributeRef>8957CFF4-2C97-D831-DC54-996BC515EE03</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

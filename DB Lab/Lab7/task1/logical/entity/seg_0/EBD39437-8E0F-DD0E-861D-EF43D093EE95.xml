@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EBD39437-8E0F-DD0E-861D-EF43D093EE95" name="makeup_exam">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:20:37 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="makeup_id" id="B034031B-E03B-FDC5-3BE0-F1A72D64532F">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:20:50 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="makeup_date" id="349DEE78-11F0-4911-16DD-5F0AD051E409">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:21:20 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reason" id="4381878C-66AA-95CA-AE2B-FD266B897436">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:21:43 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="student_id" id="4E977CDA-08C8-640C-211C-B9052D71FCD6">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:23:34 UTC</createdTime>
+<generatorID>44BDD9C8-CD3E-1AA7-9375-2FA037692395</generatorID>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<referedAttribute>8273E257-228F-E837-D842-CC34BECFE042</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exam_id" id="2FEA9AA2-C82B-55E5-B333-867266C5FC02">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:24:32 UTC</createdTime>
+<generatorID>5014F37B-EA5A-B8A9-CD31-9843B81A6E08</generatorID>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<referedAttribute>BFDC19E1-2090-E416-6D79-F5ABE9E3BA95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E92D5B20-CFD7-0276-79D9-51667FCE0CF8" name="makeup_exam PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:21:16 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B034031B-E03B-FDC5-3BE0-F1A72D64532F</attributeRef>
+<attributeRef>4E977CDA-08C8-640C-211C-B9052D71FCD6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

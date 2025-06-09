@@ -1,0 +1,47 @@
+
+create table customers (
+    customer_id number primary key,
+    name varchar2(50)
+);
+
+create table loyalty_program (
+    customer_id number references customers(customer_id),
+    points_earned number default 0,
+    points_redeemed number default 0
+);
+
+insert into customers (customer_id, name) values (1, 'Alice');
+insert into customers (customer_id, name) values (2, 'Bob');
+
+insert into loyalty_program (customer_id, points_earned, points_redeemed) values (1, 0, 0);
+insert into loyalty_program (customer_id, points_earned, points_redeemed) values (2, 0, 0);
+
+declare
+    customer_id number := 1;
+    purchase_amount number := 600;
+    points_awarded number;
+
+    if purchase_amount > 500 then
+        points_awarded := purchase_amount * 1.5;
+    else
+        points_awarded := purchase_amount;
+    end if;
+
+    update loyalty_program
+    set points_earned = points_earned + points_awarded
+    where customer_id = customer_id;
+    savepoint points_updated;
+
+    if points_awarded < 0 then
+        raise_application_error(-20001, 'Error in points calculation.');
+    end if;
+
+    commit;
+
+exception
+    when others then
+        rollback to points_updated;
+        raise;
+end;
+
+

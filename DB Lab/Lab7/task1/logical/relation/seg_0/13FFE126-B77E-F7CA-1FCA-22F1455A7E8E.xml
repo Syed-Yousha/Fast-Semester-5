@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="student_registration" directorySegmentName="seg_0" id="13FFE126-B77E-F7CA-1FCA-22F1455A7E8E">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:16:51 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<sourcePk>193BFB14-9121-D0FF-E062-A00EBFF73D75</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>368C8035-75B9-0A81-1572-DECED7914A12</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>88609B5A-8756-A6A4-0181-2AE9B1997A2D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

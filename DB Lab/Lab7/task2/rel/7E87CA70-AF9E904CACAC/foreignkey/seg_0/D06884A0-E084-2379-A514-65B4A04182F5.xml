@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D06884A0-E084-2379-A514-65B4A04182F5" containerWithKeyObject="0F4C9816-2448-89C3-65D7-BFC5D1E3BC3B" localFKIndex="432B9BC5-0F0A-A948-5B5D-46EDC16DD865" name="Billing_MealPlan_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>005835FD-0694-7AA2-A114-36AD93B61CE7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<referredTableLongName>MealPlan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F88DBAE8-DFC3-7978-2A07-5E84F3E1929E</referredTableID>
+<keyObject>829A47DD-8575-8909-B6C6-9BF577F58922</keyObject>
+<referredKeyID>829A47DD-8575-8909-B6C6-9BF577F58922</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>meal_plan_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

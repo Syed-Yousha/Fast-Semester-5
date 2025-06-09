@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C41F3F98-DB29-FD75-B478-0167FFFE4476" name="Meal_Booking">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 11:59:46 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="booking_id" id="894BC413-01EE-867F-8B4D-69C6162EE328">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:00:46 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal_date" id="7B4780A7-E8A4-D8C4-78A5-B2B91BD0DA54">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:01:18 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal_type" id="C8649FEC-EE22-8B8F-58E0-798A147C3C02">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:01:35 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dietary_preferences" id="D55DBB7B-1253-2CBD-BF8B-2721364839F4">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:02:00 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guest_meal_count" id="085BD6E4-91CF-3624-44CD-1E16804C4111">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:02:29 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id" id="612C171D-EE76-96A0-F187-C93B018E18F2">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:03:33 UTC</createdTime>
+<generatorID>146310FF-8502-1C53-9872-15A728D8ACE4</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>E4ABF650-1D7B-BFA6-7CEB-55F4377B7969</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="meal_plan_id" id="CE8F9CD5-0AA6-D0E1-0C07-1C611D648780">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:08:24 UTC</createdTime>
+<generatorID>2646E552-E0E6-83EA-18C5-C4B0CC52EA1C</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>078AF3F1-26BA-10E4-90E2-BEE5B15C6B56</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="guest_meal_id" id="80C187B4-5308-E3EA-3DBC-3B9D7F77AC25">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:55 UTC</createdTime>
+<generatorID>DC4ED4A9-C96F-3318-E59A-E0B7B76E4080</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>6C039FD4-A4D7-9BE9-37FD-E8C84DC86D3D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resident_id1" id="37B6730C-95B6-8ED7-53E6-C1FC24EADC73">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:25:55 UTC</createdTime>
+<generatorID>DC4ED4A9-C96F-3318-E59A-E0B7B76E4080</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>8957CFF4-2C97-D831-DC54-996BC515EE03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9D2785B7-E2F8-C3DF-7C12-8AE084E76D17" name="Meal_Booking PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:01:11 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>894BC413-01EE-867F-8B4D-69C6162EE328</attributeRef>
+<attributeRef>612C171D-EE76-96A0-F187-C93B018E18F2</attributeRef>
+<attributeRef>80C187B4-5308-E3EA-3DBC-3B9D7F77AC25</attributeRef>
+<attributeRef>37B6730C-95B6-8ED7-53E6-C1FC24EADC73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

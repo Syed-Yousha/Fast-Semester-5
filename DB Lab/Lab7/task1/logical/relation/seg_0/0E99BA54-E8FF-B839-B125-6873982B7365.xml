@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="course_exam" directorySegmentName="seg_0" id="0E99BA54-E8FF-B839-B125-6873982B7365">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 10:08:54 UTC</createdTime>
+<ownerDesignName>task1</ownerDesignName>
+<engineerTo>
+<item key="E9CDC9AB-95CA-DA49-7E4F-AB09AE20240D" value="true"/>
+</engineerTo>
+<sourcePk>05DED3FF-12FB-B39F-2619-0797B33BD362</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D5CA7FCC-26B9-1587-C61E-CE6E9AD1031B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>3BA78464-EE2C-90E4-2529-1CF4F915EADC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="resident_meal_booking" directorySegmentName="seg_0" id="146310FF-8502-1C53-9872-15A728D8ACE4">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:03:33 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<sourcePk>3C7E7B85-18C7-A213-9B4C-8B78B1DB3A18</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2F7CC982-16A7-F432-E9F3-CD4DA7D179E2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C41F3F98-DB29-FD75-B478-0167FFFE4476</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

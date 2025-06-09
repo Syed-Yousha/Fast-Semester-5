@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED222AD1-D5A0-4CD4-2E96-2FC517D84381" name="inventory">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>99872513-654B-C723-5014-159EA97B8B78</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inventory_id" id="B4972B5C-8651-46DC-3EF5-6E8439564AF2">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>8D446A78-EB1A-AF1C-9640-C602824A45D4</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="item_name" id="192C637F-8E97-E6AD-1656-AAA891AC70DE">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>0C9C7245-555F-895B-067B-763FBEFCF76B</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock_qnt" id="37BCD3B2-1920-5934-FB9B-4CB63BB85D4F">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>A1E32B23-EB66-143D-DFB4-7090361E9FBB</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supplier_supplier_id" id="CB0D69ED-37B7-116F-43DF-0FC0C16828CC">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>3B67C4BE-A398-7B24-D208-6DD8E8B4234F</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E372D2FC-8D21-A0E5-3DFE-E97678BB5A73" referredColumn="E3AEB7D4-0CB4-D7C6-FBAF-D84E463A9150"/>
+</associations>
+</Column>
+<Column name="Hostel_hostel_id" id="2F6FA6C2-6969-2F9F-F267-1A07E26CEAA9">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>999DB178-323F-024C-28E3-63B73BFED9B7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FC08B18-DE9A-5DCB-1BA0-4504AF91F1A8" referredColumn="D62980DE-F8B7-E6EF-BD3C-BBB4E4493F92"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2186D066-993C-8554-F161-5E9F7531EE4D" name="inventory_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>5C0E9070-A6AE-C7C2-6215-AB8DF087A296</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4972B5C-8651-46DC-3EF5-6E8439564AF2"/>
+<colUsage columnID="CB0D69ED-37B7-116F-43DF-0FC0C16828CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA17499F-FE8A-BADA-D0A4-E5AA1A1DD29D" name="inventory__IDX">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5129CA7D-96A4-F4A2-45A5-F5FCBE8DB77E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2F6FA6C2-6969-2F9F-F267-1A07E26CEAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9EB1410-9844-DED7-8EDA-B43AED12D08C" name="inventory_supplier_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>F91965BF-2D35-1790-EE79-EE0CFABEF51A</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CB0D69ED-37B7-116F-43DF-0FC0C16828CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67290B79-2278-B0DA-BDD8-CCBA4FAFB83C" name="inventory_Hostel_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>5129CA7D-96A4-F4A2-45A5-F5FCBE8DB77E</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F6FA6C2-6969-2F9F-F267-1A07E26CEAA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

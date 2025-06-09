@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="hostel_resident" directorySegmentName="seg_0" id="CD99920E-E550-25EE-935D-65C4C52912CC">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 11:54:33 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<sourcePk>1B1C0E43-6010-E7FF-9DB7-67E0627E6AFD</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A1123C28-BA27-041F-C2A9-0F0314A250FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2F7CC982-16A7-F432-E9F3-CD4DA7D179E2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,54 @@
+create table product_inventory (
+    product_id number primary key,
+    product_name varchar2(50),
+    stock number not null check (stock >= 0),
+    price number(12, 2) not null
+);
+
+create table returns (
+    return_id number primary key,
+    product_id number references product_inventory(product_id),
+    return_date date default sysdate,
+    reason varchar2(255),
+    quantity number not null check (quantity > 0)
+);
+
+insert into product_inventory (product_id, product_name, stock, price)
+values (1, 'Laptop', 10, 1000.00);
+
+insert into product_inventory (product_id, product_name, stock, price)
+values (2, 'Smartphone', 20, 500.00);
+
+insert into product_inventory (product_id, product_name, stock, price)
+values (3, 'Tablet', 15, 300.00);
+
+
+declare
+    product_id number := 1;
+    return_quantity number := 3;
+    restocking_fee number := 0.05;
+    net_quantity number;
+
+    net_quantity := return_quantity - (return_quantity * restocking_fee);
+
+    insert into returns (return_id, product_id, return_date, reason, quantity)
+    values (
+        (select nvl(max(return_id), 0) + 1 from returns),
+        product_id,
+        sysdate,
+        'Customer dissatisfaction',
+        return_quantity
+    );
+    savepoint stock_update;
+
+    update product_inventory
+    set stock = stock + net_quantity
+    where product_id = product_id;
+
+    commit;
+
+exception
+    when others then
+        rollback to stock_update;
+        raise;
+end;

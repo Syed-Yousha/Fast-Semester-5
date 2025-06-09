@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="99872513-654B-C723-5014-159EA97B8B78" name="inventory">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:17:01 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="inventory_id" id="8D446A78-EB1A-AF1C-9640-C602824A45D4">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:17:11 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="item_name" id="0C9C7245-555F-895B-067B-763FBEFCF76B">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:17:58 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock_qnt" id="A1E32B23-EB66-143D-DFB4-7090361E9FBB">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:18:13 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="supplier_id" id="3B67C4BE-A398-7B24-D208-6DD8E8B4234F">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:20:26 UTC</createdTime>
+<generatorID>F91965BF-2D35-1790-EE79-EE0CFABEF51A</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>1E525D64-1EE9-8131-EEBA-1B887A28BE2B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hostel_id" id="999DB178-323F-024C-28E3-63B73BFED9B7">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:23:05 UTC</createdTime>
+<generatorID>5129CA7D-96A4-F4A2-45A5-F5FCBE8DB77E</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<referedAttribute>DAB47568-EF31-2F94-562D-F70B919825AE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C0E9070-A6AE-C7C2-6215-AB8DF087A296" name="inventory PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:17:27 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<engineerTo>
+<item key="7E87CA70-C4C5-6784-3EF6-AF9E904CACAC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8D446A78-EB1A-AF1C-9640-C602824A45D4</attributeRef>
+<attributeRef>3B67C4BE-A398-7B24-D208-6DD8E8B4234F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

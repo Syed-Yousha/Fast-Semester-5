@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F4C9816-2448-89C3-65D7-BFC5D1E3BC3B" name="Billing">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>F516C5DA-E050-409E-6C50-2BA9574398BB</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Bill_id" id="ECF0BB48-03E5-52AB-F553-503D221A1223">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>9675D3C4-8B80-F771-C7FA-46D7F54E2CA2</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="amount" id="E49BE8CA-3316-77B8-CB46-49B57EE844FC">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>31809B86-0420-BBD9-0F82-95FEAEEAC5B8</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_date" id="A55BDA12-FDB5-4C4B-A91D-A7B2565617FF">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>1114AB8B-D9DE-050D-9AA0-938C475877CA</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="payment_status" id="6DD8C516-4E7F-5E89-BD8E-71182F5BE91D">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>4E122BE7-8887-4C45-77BD-83ED78D4CE71</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Resident_resident_id" id="6C122341-1EC1-C15D-A473-A76C8ABBBC04">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>F6075202-580D-7C07-6851-9BD13B9A18AE</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1A8F704-1F89-CFD2-8D09-6F97160EB425" referredColumn="89686D71-09A5-B909-C46C-A6681BEB89EB"/>
+</associations>
+</Column>
+<Column name="MealPlan_meal_plan_id" id="1059F2E9-49D3-D8B5-40D1-47B151864175">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>30310DD5-CDB1-77EF-D915-0F3FF84B0EB9</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D06884A0-E084-2379-A514-65B4A04182F5" referredColumn="0A05B36A-6D89-1CCE-1C74-C1AB514EC27D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="19CBD53B-DCD3-D166-5111-68246224009C" name="Billing_PK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>8843C066-FEA0-587B-7179-B8A10207B69E</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ECF0BB48-03E5-52AB-F553-503D221A1223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0654D3F7-2582-6C78-6DB6-496B8728626D" name="Billing__IDX">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>005835FD-0694-7AA2-A114-36AD93B61CE7</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="1059F2E9-49D3-D8B5-40D1-47B151864175"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="103BF4F9-9A58-BA2F-CE93-6FDB5E441055" name="Billing_Resident_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>FDD15210-C177-A792-615E-5D6B37D3830B</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C122341-1EC1-C15D-A473-A76C8ABBBC04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="432B9BC5-0F0A-A948-5B5D-46EDC16DD865" name="Billing_MealPlan_FK">
+<createdBy>DELL</createdBy>
+<createdTime>2024-10-06 12:26:45 UTC</createdTime>
+<generatorID>005835FD-0694-7AA2-A114-36AD93B61CE7</generatorID>
+<ownerDesignName>task2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1059F2E9-49D3-D8B5-40D1-47B151864175"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
